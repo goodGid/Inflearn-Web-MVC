@@ -5,16 +5,31 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <filter>
+    <filter-name>myFilter</filter-name>
+    <filter-class>be.goodgid.MyFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>myFilter</filter-name>
+    <servlet-name>hello</servlet-name>
+  </filter-mapping>
+
+  <!-- Listener 등록하기 -->
+  <!-- 23 Line으로 이동하면 에러가 뜬다. -->
+  <!-- 아무래도 위치가 중요한가보다 ㅎㅎ -->
+  <listener>
+    <listener-class>be.goodgid.MyListener</listener-class>
+  </listener>
+
   <!-- Add : Servlet Mapping -->
   <servlet>
     <servlet-name>hello</servlet-name>
     <servlet-class>be.goodgid.helloServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
-  
-  
+
 </web-app>
