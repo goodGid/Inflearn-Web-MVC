@@ -4,8 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-
-  <!-- Add : Servlet Mapping -->
+  
   <servlet>
     <servlet-name>hello</servlet-name>
     <servlet-class>be.goodgid.helloServlet</servlet-class>
