@@ -17,23 +17,6 @@ public class HelloController {
         return "Hello " + helloService.getName();
     }
 
-    /**
-     * 191230 (Mon)
-     * handler = RequestMappingHandlerMapping
-     * handlerAdapter = RequestMappingHandlerAdapter
-     *
-     * doDispatch()
-     * org.springframework.web.servlet.DispatcherServlet#doDispatch(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
-     *
-     * getHandler()
-     * org.springframework.web.servlet.DispatcherServlet#getHandler(javax.servlet.http.HttpServletRequest)
-     *
-     * getHandlerAdapter()
-     * org.springframework.web.servlet.DispatcherServlet#getHandlerAdapter(java.lang.Object)
-     *
-     * SimpleController와 차이점을 파악하자.
-     */
-
     @GetMapping("/sample")
     public String sample(){
         return "sample";
