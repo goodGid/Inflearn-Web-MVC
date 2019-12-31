@@ -16,6 +16,5 @@ public class WebConfig {
         internalResourceViewResolver.setPrefix("/WEB-INF/");
         internalResourceViewResolver.setSuffix(".jsp");
         return internalResourceViewResolver;
-
     }
 }
