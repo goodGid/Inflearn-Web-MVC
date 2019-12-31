@@ -12,6 +12,9 @@ public class WebApplication implements WebApplicationInitializer {
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
+        /**
+         * AnnotationConfigWebApplicationContext를 인스턴스를 생성한다.
+         */
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
 
         /**
@@ -24,6 +27,11 @@ public class WebApplication implements WebApplicationInitializer {
         context.register(WebConfig.class);
         context.refresh();
 
+        /**
+         * 위에서 생성한 AnnotationConfigWebApplicationContext 인스턴스를
+         * DispatcherServlet.webApplicationContext의 값으로 세팅해준다.
+         * // this.webApplicationContext = webApplicationContext;
+         */
         DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
         ServletRegistration.Dynamic app = servletContext.addServlet("dispatcher", dispatcherServlet);
         /**

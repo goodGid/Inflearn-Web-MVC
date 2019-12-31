@@ -15,3 +15,4 @@
         - Reference : be.goodgid.WebApplication
     - WebApplication에 Java로 DispatcherServlet을 등록한다.
     
+3. 보다 자세한건 https://goodgid.github.io/Spring-DispatcherServlet/ 글을 참고하자
