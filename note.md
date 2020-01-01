@@ -1,18 +1,9 @@
 
  
-## 11 스프링 MVC 동작 원리 마무리
+## 12 스프링 MVC 빈 설정
 
-- 191231 (Tue)
+- 200101 (Wed)
 
-- DispatcherServlet 등록하는법 
+- WebConfig의 주석만 보면 됨
 
-1. 지금까지 강의에서 해오던 방식
-    - web.xml로 등록
-    
-2. 이번 강의에서 사용할 방식
-    - web.xml을 삭제한다.
-    - WebApplication을 만든다.
-        - Reference : be.goodgid.WebApplication
-    - WebApplication에 Java로 DispatcherServlet을 등록한다.
-    
-3. 보다 자세한건 https://goodgid.github.io/Spring-DispatcherServlet/ 글을 참고하자
+- Reference : be.goodgid.WebConfig
