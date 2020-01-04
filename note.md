@@ -1,13 +1,9 @@
 
  
-## 13 @EnableWebMvc
+## 14 WebMvcConfigurer
 
-- 200101 (Wed)
+- 200102 (Fri)
 
-- 하나하나 Bean으로 등록하는건 비효율적이다.
-
-- 그렇기 때문에 Spring에서
-
-- @EnableWebMvc을 지원한다.
+- WebConfig 파일에 주석만 보면 됨 ! 
 
 - Reference : be.goodgid.WebConfig
