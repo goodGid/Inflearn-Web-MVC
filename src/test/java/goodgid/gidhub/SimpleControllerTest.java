@@ -15,16 +15,16 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-class EventControllerTest {
+class SimpleControllerTest {
 
     @Autowired
     MockMvc mockMvc;
 
     @Test
     public void hello() throws Exception {
-        this.mockMvc.perform(MockMvcRequestBuilders.get("/hello/goodgid"))
+        this.mockMvc.perform(MockMvcRequestBuilders.get("/hello"))
                 .andDo(print())
-                .andExpect(content().string("hello goodgid"));
+                .andExpect(content().string("hello"));
     }
 
 }
