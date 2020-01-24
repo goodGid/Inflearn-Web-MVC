@@ -26,6 +26,7 @@ public class GreetingInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler,
                                 Exception ex) throws Exception {
         System.out.println("[1] GreetingInterceptor afterCompletion");
+        response.getWriter().print(" From afterCompletion in GreetingInterceptor");
 
     }
 }

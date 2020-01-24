@@ -19,13 +19,11 @@ public class GoodByeInterceptor implements HandlerInterceptor {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
                            ModelAndView modelAndView) throws Exception {
         System.out.println("[2] GoodByeInterceptor postHandle");
-
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler,
                                 Exception ex) throws Exception {
         System.out.println("[2] GoodByeInterceptor afterCompletion");
-
     }
 }
